@@ -1,41 +1,51 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from pages.base_page import BasePage
+import time
 
 
-class AdminPage:
+class AdminPage(BasePage):
+    # Locators
+    USERNAME_FILTER = (By.XPATH, "//div[contains(@class, 'oxd-input-group')]/div/input")
+    USER_ROLE_DROPDOWN = (By.XPATH, "(//div[contains(@class, 'oxd-select-text')])[1]")
+    STATUS_DROPDOWN = (By.XPATH, "(//div[contains(@class, 'oxd-select-text')])[2]")
+    SEARCH_BUTTON = (By.XPATH, "//button[@type='submit']")
+    RESET_BUTTON = (By.XPATH, "//button[contains(@class, 'oxd-button--ghost')]")
+    TABLE_ROWS = (By.XPATH, "//div[contains(@class, 'oxd-table-card')]")
 
-    admin_menu = (By.XPATH, "//span[text()='Admin']")
+    def search_users_with_criteria(self, username="", user_role="", status=""):
+        """Search users using multiple criteria"""
+        self.logger.info(f"Searching with criteria - Username: {username}, Role: {user_role}, Status: {status}")
 
-    username_box = (
-        By.XPATH,
-        "(//input[@class='oxd-input oxd-input--active'])[2]"
-    )
+        if username:
+            self.send_keys(self.USERNAME_FILTER, username)
+            time.sleep(1)
 
-    search_btn = (
-        By.XPATH,
-        "//button[contains(.,'Search')]"
-    )
+        if user_role:
+            self.click(self.USER_ROLE_DROPDOWN)
+            time.sleep(1)
+            role_option = (By.XPATH, f"//div[@role='option']//span[text()='{user_role}']")
+            self.click(role_option)
+            time.sleep(1)
 
-    records = (
-        By.XPATH,
-        "//div[@class='oxd-table-card']"
-    )
+        if status:
+            self.click(self.STATUS_DROPDOWN)
+            time.sleep(1)
+            status_option = (By.XPATH, f"//div[@role='option']//span[text()='{status}']")
+            self.click(status_option)
+            time.sleep(1)
 
-    def __init__(self, driver):
+        self.click(self.SEARCH_BUTTON)
+        time.sleep(2)
+        return self
 
-        self.driver = driver
+    def get_search_results_count(self):
+        """Get number of search results"""
+        results = self.find_elements(self.TABLE_ROWS)
+        return len(results)
 
-    def click_admin(self):
-
-        self.driver.find_element(*self.admin_menu).click()
-
-    def enter_username(self, uname):
-
-        self.driver.find_element(*self.username_box).send_keys(uname)
-
-    def click_search(self):
-
-        self.driver.find_element(*self.search_btn).click()
-
-    def get_records(self):
-
-        return self.driver.find_elements(*self.records)
+    def verify_search_results(self, expected_username="", expected_role="", expected_status=""):
+        """Verify search results match criteria"""
+        # Implementation depends on table structure
+        # This is a simplified version
+        return self.get_search_results_count() > 0

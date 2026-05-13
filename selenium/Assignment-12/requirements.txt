@@ -1,4 +1,7 @@
-pytest-bdd
-pytest
-selenium
-webdriver-manager
+pytest==7.4.3
+selenium==4.15.0
+pytest-bdd==7.0.1
+webdriver-manager==4.0.1
+pytest-html==4.1.1
+allure-pytest==2.13.2
+Pillow==10.1.0

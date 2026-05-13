@@ -1,0 +1,19 @@
+application:
+  name: demoblaze
+  url: https://www.demoblaze.com
+
+browser:
+  name: edge
+  headless: false
+
+timeouts:
+  implicit_wait: 5
+  explicit_wait: 20
+
+reporting:
+  report_path: reports/
+  screenshot_path: screenshots/
+
+#execution:
+#  parallel: true
+#  retries: 2

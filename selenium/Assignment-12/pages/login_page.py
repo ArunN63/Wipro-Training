@@ -1,37 +1,43 @@
 from selenium.webdriver.common.by import By
+from pages.base_page import BasePage
+from pages.dashboard_page import DashboardPage
+from utilities.config import BASE_URL
 
 
-class LoginPage:
-
-    username = (By.NAME, "username")
-    password = (By.NAME, "password")
-    login_btn = (By.XPATH, "//button[@type='submit']")
-    invalid_msg = (
-        By.XPATH,
-        "//p[contains(text(),'Invalid credentials')]"
-    )
+class LoginPage(BasePage):
+    # Locators
+    USERNAME_INPUT = (By.NAME, "username")
+    PASSWORD_INPUT = (By.NAME, "password")
+    LOGIN_BUTTON = (By.XPATH, "//button[@type='submit']")
+    ERROR_MESSAGE = (By.XPATH, "//p[contains(@class, 'alert')]")
+    ORANGEHRM_LOGO = (By.XPATH, "//img[@alt='company-branding']")
 
     def __init__(self, driver):
-        self.driver = driver
+        super().__init__(driver)
+        self.driver.get(BASE_URL)
 
-    def open_url(self):
+    def login(self, username, password):
+        """Login with username and password"""
+        self.logger.info(f"Logging in with username: {username}")
+        self.send_keys(self.USERNAME_INPUT, username)
+        self.send_keys(self.PASSWORD_INPUT, password)
+        self.click(self.LOGIN_BUTTON)
 
-        self.driver.get(
-            "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-        )
+        from pages.dashboard_page import DashboardPage
+        return DashboardPage(self.driver)
 
-    def enter_username(self, uname):
+    def login_invalid(self, username, password):
+        """Login with invalid credentials"""
+        self.logger.info(f"Attempting login with invalid password")
+        self.send_keys(self.USERNAME_INPUT, username)
+        self.send_keys(self.PASSWORD_INPUT, password)
+        self.click(self.LOGIN_BUTTON)
+        return self
 
-        self.driver.find_element(*self.username).send_keys(uname)
+    def get_error_message(self):
+        """Get error message text"""
+        return self.get_text(self.ERROR_MESSAGE)
 
-    def enter_password(self, pwd):
-
-        self.driver.find_element(*self.password).send_keys(pwd)
-
-    def click_login(self):
-
-        self.driver.find_element(*self.login_btn).click()
-
-    def get_invalid_message(self):
-
-        return self.driver.find_element(*self.invalid_msg).text
+    def is_login_page(self):
+        """Verify if on login page"""
+        return "login" in self.get_current_url()

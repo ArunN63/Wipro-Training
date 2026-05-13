@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="492e3606-5895-4a27-935c-b775b33f2029" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/features/leave_workflow.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/features/profile_update.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/pages/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/pages/myinfo_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/run_tests.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/admin_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/employee_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/leave_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/login_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/steps/profile_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment-12/utilities/test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/features/admin_search.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/features/employee_management.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/features/leave_workflow.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/features/login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/features/profile_update.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/admin_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/dashboard_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/leave_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/myinfo_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pages/pim_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/admin_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/employee_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/leave_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/login_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/steps/profile_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/test_file_upload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orange/test_minimal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/.idea/Assignment-12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/.idea/orangehrm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/admin.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/leave.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/pim.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/profile.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/admin_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/leave_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/login_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/pim_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/features/steps/profile_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/admin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pages/admin_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/dashboard_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pages/dashboard_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/leave_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pages/leave_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/pim_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pages/pim_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pages/profile_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/features/admin_search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/tests/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-12/features/employee_management.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/utils/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-12/utils/test_browser.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3DWixVwYL0AobnO9brUnANNAVgc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-02acdf704d18-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28539.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="492e3606-5895-4a27-935c-b775b33f2029" name="Changes" comment="" />
+      <created>1778404473573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778404473573</updated>
+    </task>
+    <servers />
+  </component>
+</project>
